@@ -10,8 +10,6 @@ interface Props {
   pokemons: SmallPokemon[];
 }
 
-const origin = typeof window === 'undefined' ? '' : window.location.origin;
-
 const HomePage: NextPage<Props> = ({ pokemons }) => {
   const router = useRouter();
   return (
